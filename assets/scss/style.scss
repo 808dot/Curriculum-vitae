@@ -8,8 +8,7 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
-    background-color: black;
-    color: wheat;
+    // background-color: black;
 }
 html {
     scroll-behavior: smooth;
@@ -17,6 +16,7 @@ html {
 
 
 .hero{
+  background-color: black;
   .hobby{
     width: 100vw;
     height: 100vh;
@@ -34,6 +34,12 @@ html {
     -webkit-background-repeat: no-repeat;
     -webkit-background-position: center center;
 
+    font-family: 'VT323', monospace;
+    font-size: 24px;
+    color: gold;
+
+    
+
     .hobby-content{
       width: 70%;
       height: 60%;
@@ -44,10 +50,75 @@ html {
       // box-shadow: 0px 0px 24px 8px rgba(255, 9, 62, 1);
       border-radius: 10%;
 
+      
+
       .hobby-content-left{
         width: 50%;
         height: 100%;
         background-color: transparent;
+        
+        .text{
+          position: relative;
+          padding: 0 4%;
+          top: 20%;
+          // background-color: aquamarine;
+          z-index: 200;
+        }
+
+        .card-container{
+          width: 100%;
+          height: 70%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          transition: .5s;
+          // background-color:rebeccapurple;
+
+          .card-one{
+            left: 20%;
+            top:65%;
+
+            background: url(../img/img_1.jpg);
+            box-shadow: 0px 0px 24px 8px rgb(184, 144, 37);
+            
+          }
+
+          .card-one:hover, .card-two:hover,.card-three:hover{
+            width: 55%;
+            height: 60%;
+            z-index: 10;
+          }
+
+          .card-two{
+            top:10%;
+            background: url(../img/img_2.jpg);
+            box-shadow: 0px 0px 24px 8px rgb(16, 141, 172);
+            z-index: 5;
+          }
+
+          .card-three{
+            left: -20%;
+            
+            background: url(../img/img_3.jpg);
+            box-shadow: 0px 0px 24px 8px rgb(72, 141, 161);
+          }
+
+          .card-one, .card-two, .card-three{
+            position: relative;
+            width: 45%;
+            height: 40%;
+            transition: .5s;
+
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+
+            -webkit-background-size: cover;
+            -webkit-background-repeat: no-repeat;
+            -webkit-background-position: center center;
+          }
+        }
       }
 
       .hobby-content-right{
@@ -55,73 +126,67 @@ html {
         height: 100%;
         background-color: transparent;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        flex-direction: column;
         transition: .5s;
+
+        .text{
+          position: relative;
+          padding: 0 4%;
+          // background-color: aquamarine;
+        }
+
+        .card-container{
+          width: 100%;
+          height: 70%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          transition: .5s;
+          // background-color: aliceblue;
+
+          .card-one{
+            transform: rotate(-25deg);
+            left: 10%;
+
+            background: url(../img/poster_1.png);
+            box-shadow: 0px 0px 24px 8px rgb(155, 69, 88, 1);
+          }
+
+          .card-one:hover, .card-two:hover,.card-three:hover{
+            width: 45%;
+            height: 80%;
+            z-index: 10;
+          }
+
+          .card-two{
+            background: url(../img/poster_2.png);
+            box-shadow: 0px 0px 24px 8px rgb(116, 11, 33, 1);
+          }
+
+          .card-three{
+            transform: rotate(25deg);
+            left: -10%;
+            
+            background: url(../img/poster_3.png);
+            box-shadow: 0px 0px 24px 8px rgb(72, 141, 161);
+          }
+
+          .card-one, .card-two, .card-three{
+            position: relative;
+            width: 35%;
+            height: 70%;
+            transition: .5s;
+
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+
+            -webkit-background-size: cover;
+            -webkit-background-repeat: no-repeat;
+            -webkit-background-position: center center;
+          }
+        }
         
-        .card-one{
-          position: relative;
-          width: 35%;
-          height: 50%;
-          transform: rotate(-25deg);
-          left: 10%;
-          transition: .5s;
-
-          background: url(../img/poster_1.png);
-          background-size: cover;
-          background-repeat: no-repeat;
-          background-position: center center;
-
-          -webkit-background-size: cover;
-          -webkit-background-repeat: no-repeat;
-          -webkit-background-position: center center;
-
-          box-shadow: 0px 0px 24px 8px rgb(155, 69, 88, 1);
-        }
-
-        .card-one:hover, .card-two:hover,.card-three:hover{
-          width: 45%;
-          height: 60%;
-          z-index: 10;
-        }
-
-        .card-two{
-          position: relative;
-          width: 35%;
-          height: 50%;
-          transition: .5s;
-
-          background: url(../img/poster_2.png);
-          background-size: cover;
-          background-repeat: no-repeat;
-          background-position: center center;
-
-          -webkit-background-size: cover;
-          -webkit-background-repeat: no-repeat;
-          -webkit-background-position: center center;
-
-          box-shadow: 0px 0px 24px 8px rgb(116, 11, 33, 1);
-        }
-
-        .card-three{
-          position: relative;
-          width: 35%;
-          height: 50%;
-          transform: rotate(25deg);
-          left: -10%;
-          transition: .5s;
-
-          background: url(../img/poster_3.png);
-          background-size: cover;
-          background-repeat: no-repeat;
-          background-position: center center;
-
-          -webkit-background-size: cover;
-          -webkit-background-repeat: no-repeat;
-          -webkit-background-position: center center;
-
-          box-shadow: 0px 0px 24px 8px rgb(72, 141, 161);
-        }
       }
 
     }
