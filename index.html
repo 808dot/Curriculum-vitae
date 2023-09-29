@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/style-keyframes.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/styles-keyframes.css">
 
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
@@ -33,13 +33,38 @@
 
         </header>
 
-        <section class="hero">
-            <div class="hobby" id="hobby">
+        <section class="hero-mobile">
+          <img src="assets/img/sprite.png" class="sprite" alt="">
+          <p>Witryna aktualnie nie jest dostępna na tak smollll urządzenie z jakiego korzystasz, 
+            ale to nic nie szkodzi zapisz i sprawdź pózniej na urządzeniu z wiekszym ekranem.</p>
+            <img src="assets/img/sad.png" class="sad" alt="">
+        </section>
 
-              <div class="hobby-content">
-                <div class="hobby-content-left">
-                  <div class="text">Namiętny poszukiwacz przygód z kreatywną duszą. Moje życie to mieszanka ekscytujących przejażdżek na deskorolce i snowboardzie, 
-                    rejestrowania chwil życia przez pryzmat fotografii i tworzenia filmów</div>
+        <section class="hero">
+            <div class="home">
+
+              <div class="project">
+                <a href="#project"><img src="assets/img/project.png" alt=""></a>
+                <p>Projekty</p>
+              </div>
+
+
+              <div class="aboutme">
+                <a href="#aboutme"><img src="assets/img/aboutme.png" alt=""></a>
+                <p>O mnie</p>
+              </div>
+
+              <p class="witaj">Witaj.</p>
+              
+              
+            </div>
+
+            <div class="aboutme" id="aboutme">
+
+              <div class="aboutme-content">
+                <div class="aboutme-content-left">
+                  <p>Namiętny poszukiwacz przygód z kreatywną duszą. Moje życie to mieszanka ekscytujących przejażdżek na deskorolce i snowboardzie, 
+                    rejestrowania chwil życia przez pryzmat fotografii i tworzenia filmów</p>
                   <div class="card-container">
                     <div class="card-one"></div>
                     <div class="card-two"></div>
@@ -48,19 +73,52 @@
                   
                 </div>
 
-                <div class="hobby-content-right">
+                <div class="aboutme-content-right">
                   <div class="card-container">
                     <div class="card-one"></div>
                     <div class="card-two"></div>
                     <div class="card-three"></div>
                   </div>
                   
-                  <div class="text">tworzenia cyfrowego kunsztu poprzez obróbkę grafiki i wideo, 
-                    zanurzania się w świecie muzyki i odkrywania piękno naszej planety poprzez podróże.</div>
+                  <p>tworzenia cyfrowego kunsztu poprzez obróbkę grafiki i wideo, 
+                    zanurzania się w świecie muzyki i odkrywania piękna naszej planety poprzez podróże.</p>
                   
                 </div>
               </div>
                 
+            </div>
+
+            <div class="skillmap" id="skillmap">
+              Tutaj bedzie cos niedlugo :D
+            </div>
+
+            <div class="project" id="project">
+
+              <div class="project-content">
+
+                <div class="project-box">
+                  <img src="/assets/img/ravishingculture.gif" alt="" class="project-logo">
+                  <p>ravishingculture</p>
+                  
+                </div>
+                <div class="project-box">glass-world</div>
+
+              </div>
+
+
+            </div>
+
+            <div class="contact" id="contact">
+              <form class="contact-form">
+                <h1><i class='bx bxs-contact'></i> Napisz do nas</h1>
+                <div class="contact-name-email-box">
+                    <input type="text" id="fname" name="firstname" placeholder="Imie">
+                    <input type="text" id="femail" name="email" placeholder="E-mail">
+                </div>
+                <textarea id="fmessage" name="message" placeholder="Wiadomość"></textarea>
+                
+                <input type="submit" id="fbutton" value="Wyślij">
+              </form>
             </div>
         </section>
     </main>
